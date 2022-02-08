@@ -1,0 +1,27 @@
+.intro {
+  display: flex;
+  // background-color: #000;
+  background-image: url('dog.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  .text {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    // font-size: 150px;
+
+    h1 {
+      font-size: 150px;
+    }
+
+    h3 {
+      font-size: 50px;
+      text-align: center;
+    }
+  }
+}

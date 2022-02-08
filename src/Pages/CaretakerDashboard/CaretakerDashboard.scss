@@ -1,0 +1,116 @@
+.caretaker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    margin: 40px;
+    font-size: 100px;
+    span {
+      color: #54940c;
+    }
+  }
+  h3 {
+    margin: 0px 40px;
+    font-size: 50px;
+  }
+  .block {
+    margin: 10px auto;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    background-color: lightgray;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+
+    .item {
+      text-align: center;
+      cursor: pointer;
+      border-color: transparent;
+      background-color: transparent;
+      font-size: 40px;
+      justify-content: center;
+      align-items: center;
+      margin: 40px 0px;
+    }
+  }
+
+  .sign-out {
+    flex-direction: row;
+    cursor: pointer;
+    z-index: 2;
+    margin: 20px;
+    background-color: #85cb33;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 50px;
+    font-weight: 800;
+    border-color: transparent;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
+  }
+
+  .disclaimer-modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .buttons {
+      .yes {
+        position: relative;
+        background-color: rgb(55, 214, 77);
+        justify-content: flex-start;
+        padding: 20px;
+        margin-right: 150px;
+        margin-top: 50px;
+      }
+
+      .no {
+        position: relative;
+        background-color: rgb(214, 55, 55);
+        justify-content: flex-end;
+        padding: 20px;
+        margin-left: 150px;
+      }
+    }
+    button {
+      border-radius: 20px;
+      font-size: 40px;
+      border-color: transparent;
+      cursor: pointer;
+    }
+  }
+}
+
+#block2 {
+  .reviewContainer {
+    display: flex;
+    flex-direction: column;
+    .petOwner {
+      text-align: left;
+      margin-top: 50px;
+      margin-bottom: 10px;
+      margin-left: 50px;
+      margin-right: 50px;
+      font-size: 50px;
+    }
+
+    .rating {
+      width: 100%;
+      display: flex;
+      align-content: flex-start;
+      margin: 0px 50px;
+    }
+
+    .review {
+      font-size: 30px;
+      text-align: left;
+      margin-left: 50px;
+    }
+  }
+}

@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import CaretakerDashboard from './Pages/CaretakerDashboard/CaretakerDashboard';
+import PetOwnerDashboard from './Pages/PetOwnerDashboard/PetOwnerDashboard';
+import LandingPage from './Pages/LandingPage/LandingPage';
+import ErrorPage from './Pages/ErrorPage';
+import { Routes, Route } from 'react-router-dom';
+import UserContext from './components/user/User';
+import { useContext, useState, useMemo } from 'react';
+import { HashRouter } from 'react-router-dom';
+// import { $, jQuery } from 'jquery';
 
 function App() {
+  // window.$ = $;
+  // window.jQuery = jQuery;
+  const [user, setUser] = useState(null);
+  const value = useMemo(() => ({ user, setUser }, [user, setUser]));
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // <BrowserRouter>
+    <div className="app">
+      <UserContext.Provider value={value}>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/caretaker" element={<CaretakerDashboard />} />
+          <Route path="/petowner" element={<PetOwnerDashboard />} />
+        </Routes>
+      </UserContext.Provider>
     </div>
+    // </BrowserRouter>
   );
 }
 

@@ -1,0 +1,29 @@
+.Card
+{
+    padding: 1em 80px;
+    border-radius: 40px;
+    background-color: #85CB33;
+
+    margin: 0px 40px;
+
+    .header
+    {
+        padding: 0;
+    
+        img
+        {
+            display: block;
+        }
+    }
+
+    .body
+    {
+
+        p 
+        {
+            // padding: 10px;
+            font-size: 20px;
+            color: black;
+        }
+    }
+}
